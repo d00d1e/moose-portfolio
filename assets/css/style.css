@@ -411,6 +411,76 @@ section:not(.hero) {
 }
 
 /*********
+  MOTTO
+**********/
+.motto {
+  height: 35vh;
+  left: 26rem;
+  width: calc(100% - 26rem);
+  background: url("../img/section-background2.jpg") center center/cover;
+  position: relative;
+  z-index: 1;
+}
+
+.motto::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.motto .container {
+  height: 100%;
+  display: flex;
+  text-align: center;
+}
+
+.quote-container {
+  margin: auto;
+  max-width: 50rem;
+  text-align: center;
+  color: var(--light-color);
+}
+
+.quote {
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 0.5rem;
+  line-height: 0.8;
+  position: relative;
+}
+
+.quote::before,
+.quote::after {
+  font-size: 3rem;
+  width: 1rem;
+  height: 1rem;
+  font-family: sans-serif;
+}
+
+.quote::before {
+  content: open-quote;
+  top: -5rem;
+  left: 6rem;
+}
+
+.quote::after {
+  content: close-quote;
+  bottom: -5rem;
+  right: -6rem;
+}
+
+.quote-by {
+  display: block;
+  text-align: right;
+  margin-top: 2rem;
+}
+
+/*********
   FOOTER
 **********/
 
