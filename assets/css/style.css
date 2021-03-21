@@ -302,7 +302,7 @@ section:not(.hero) {
 
 .intro-description p span {
   font-family: var(--heading-font-family);
-  font-size: 1.6rem;
+  font-size: 4.6rem;
   color: var(--dark-color);
 }
 
@@ -509,8 +509,8 @@ section:not(.hero) {
   height: 2rem;
   border: 0.5rem solid var(--light-gray-color);
   border-radius: 50%;
-  bottom: -2.5rem;
-  left: -1.2rem;
+  bottom: -1.5rem;
+  left: -0.7rem;
 }
 
 .timeline-item {
@@ -553,6 +553,102 @@ section:not(.hero) {
 .timeline-entry-name span {
   font-size: 1.5rem;
   font-weight: 300;
+}
+
+/*********
+  PORTFOLIO
+**********/
+.my-portfolio .grid {
+  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+}
+
+.my-portfolio .grid-item {
+  min-height: 35rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.portfolio-item-info {
+  width: 100%;
+  height: 100%;
+  background-color: var(--extra-dark-color);
+  color: var(--light-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.portfolio-item-info:hover {
+  opacity: 1;
+}
+
+.project-name {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.7rem;
+  transform: translateY(-2rem);
+  transition: transform 0.5s ease;
+}
+
+.project-name span {
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+.project-type {
+  font-size: 1.3rem;
+  opacity: 0.5;
+  transform: translateY(2rem);
+  transition: transform 0.5s ease;
+}
+
+.portfolio-item-info:hover .project-name,
+.portfolio-item-info:hover .project-type {
+  transform: translateY(0);
+}
+
+.info-cta {
+  margin-top: auto;
+}
+
+.info-btn {
+  color: var(--light-color);
+  border: 1px solid var(--light-color);
+}
+
+.info-btn:hover {
+  color: var(--dark-color);
+  background-color: rgba(255, 255, 255, 0.7);
+  border-color: transparent;
+}
+
+.load-more .btn {
+  margin-top: 2.5rem;
+  padding: 1.5rem 5rem;
+}
+
+.btn-load {
+  background-color: var(--extra-dark-color);
+  color: var(--light-color);
+}
+
+.btn-load:hover {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /*********
