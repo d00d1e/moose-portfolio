@@ -241,6 +241,7 @@ section:not(.hero) {
 
 .hero-overlay {
   max-width: 90%;
+  height: 70vh;
   user-select: none;
   -webkit-user-drag: none;
   margin-top: auto;
@@ -833,6 +834,7 @@ section:not(.hero) {
 
   .hero-overlay {
     width: 60%;
+    height: 60%;
   }
 
   .hero::after {
@@ -890,6 +892,7 @@ section:not(.hero) {
 
   .hero-overlay {
     width: 50%;
+    height: 50%;
   }
 
   .cta p {
