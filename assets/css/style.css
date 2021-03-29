@@ -28,6 +28,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 html {
   font-size: 62.5%;
   color: var(--body-font-color);
@@ -38,7 +43,6 @@ body {
   font-family: var(--body-font-family);
   font-size: var(--body-font-size);
   overscroll-behavior: none;
-  overflow-x: hidden;
 }
 
 a {
@@ -233,8 +237,8 @@ section:not(.hero) {
 
 .hero {
   height: 100vh;
-  width: 100%;
-  background: url("../img/hero-background2.jpg") bottom center/cover;
+  width: 100vw;
+  background: url("../img/hero-background2.jpg") no-repeat center center/cover;
   position: relative;
   display: flex;
   justify-content: center;
@@ -425,7 +429,7 @@ section:not(.hero) {
 **********/
 .motto {
   height: 35vh;
-  width: 100vw;
+  width: 100%;
   background: url("../img/section-background2.jpg") center center/cover;
   position: relative;
   z-index: 1;
